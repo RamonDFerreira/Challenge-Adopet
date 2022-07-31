@@ -189,7 +189,7 @@ body {
 }
 
 .formulario-senha::placeholder {
-    background: url(img/Senha.png) no-repeat;
+    background: url(./img/Senha.png) no-repeat;
     background-position: right;
 }
 
@@ -211,7 +211,7 @@ body {
     }
     
     .container {
-        background-image: url('./img/Patas-tablet.png'),
+        background-image: url('../img/Patas-tablet.png'),
             url('../img/bg-topo.png'), 
             url('../img/bg-direita.png');
         background-repeat: no-repeat;
@@ -309,7 +309,7 @@ body {
 @media screen and (min-width:1440px) {
 
     .container-index {
-        background-image: url('./img/bg-topo.png'), 
+        background-image: url('../img/bg-topo.png'), 
             url('../img/bg-direita.png'), 
             url('../img/Ilustracao.png');
         background-repeat: no-repeat;
