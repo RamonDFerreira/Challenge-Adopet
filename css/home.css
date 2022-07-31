@@ -1,0 +1,127 @@
+.container-home {
+    background-image: url('../img/bg-topo-mobile.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+    display: flex;
+    flex-direction: column;
+    height: 250px;  
+}
+
+.principal-home {
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 1em;
+}
+
+.titulo-home {
+    color: var(--cor-azul);
+    margin:.5em 4em 2em;
+}
+
+.card {
+    background-color: var(--cor-cinza-claro-fundo);
+    display: flex;
+    padding: 1em;
+    text-align: initial;
+    margin-top: 1em;
+}   
+
+.foto-pet{
+    flex-grow: 2;
+}
+
+.dados-pet {
+    padding: 0 1em;
+    flex-grow: 3;
+}
+.dados-pet__nome-pet {
+    font-weight: 600;
+    color: var(--cor-azul);   
+    margin-bottom: 1em; 
+}
+
+.dados-pet__descricao {
+    font-size: 14px;
+    color: var(--cor-cinza);
+    padding-bottom: .3em;
+}
+
+.dados-pet__cidade {
+    margin: 2em 0 .5em;
+    font-size: 12px;
+    color: var(--cor-cinza);
+}
+
+.dados-pet__responsavel {
+    display: flex;
+    align-items: center;
+}
+
+.dados-pet__responsavel-texto {
+    padding-left: .5em;
+    text-decoration: none;
+    font-size: 10px;
+    color: var(--cor-cinza);
+    cursor:pointer;
+}
+
+.dados-pet__responsavel {
+    z-index: 999;
+}
+
+@media screen and (min-width: 768px) {
+    .container-home {
+        background-image: url('../img/bg-topo.png');
+        background-repeat: no-repeat;
+        background-position: left top;
+        height: 100vh;
+    }
+
+    .principal-home {
+        margin-top: 10em;
+    }
+
+    .titulo-home {
+        font-size: 18px;
+    }
+
+    .pets {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 1em;  
+        margin-bottom: 1em;    
+    }
+
+    .card {
+        width: 45%;
+        margin-top: 0.75em;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .container-home {
+        background-image: url('../img/bg-topo.png'),
+                          url('../img/bg-direita.png');
+        background-repeat: no-repeat;
+        background-position: left top, right center;
+        height: 100vh;
+    }
+
+    .principal-home {
+        margin-top: 3em;
+        width: 80%;
+    }
+
+    .pets {
+        padding: 0;
+    }
+
+    .card {
+        width: 30%;
+        margin-top: 0.75em;
+    }
+}

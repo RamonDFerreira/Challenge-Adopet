@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="cabecalho">
+            <nav class="cabecalho__grupo">
+                <img src="./img/Logo-header.png" alt="Logo da adopet" class="cabecalho-itens cabecalho__grupo-logo">
+                <a href="index.html" class="cabecalho-itens"><img src="./img/Home.png" class="cabecalho__icone" alt="Ícone Home"></a>
+                <a href="mensagem.html" class="cabecalho-itens" id="menuMensagem"><img src="./img/Mensagens.png"  class="cabecalho__icone" id="menuMensagem"alt="Ícone Mensagens"></a>
+            </nav>
+        </header>
+        <main class="principal">
+            <img class="titulo titulo-cadastro-mobile" src="./img/Logo-azul.png" alt="Logo da adopet">
+            <img class="titulo titulo-cadastro-desktop" src="./img/Logo-azul-desktop.png" alt="Logo da adopet">
+            <div class="principal-texto-cadastro">
+                <p class="texto">Ainda não tem cadastro?</p>
+                <p class="texto">Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</p>
+            </div>
+            <form class="formulario" id="formularioCadastro" action="login.html">
+                <label class="formulario-label" for="email">Email</label>
+                <input class="formulario-item" type="email" name="email" id="email" placeholder="Escolha seu melhor email" required>
+                <label class="formulario-label" for="nome" id="label_nome">Nome</label>
+                <input class="formulario-item" type="text" name="nome" id="nome" placeholder="Digite seu nome completo" required>
+                <label class="formulario-label" for="senha">Senha</label>
+                <input class="formulario-item formulario-senha" type="password" name="senha" id="senha" minlength="6" pattern="^[a-zA-Z0-9-_\.][a-zA-Z0-9-_\.]+$" title="Senha deve conter no mínimo 6 dígitos, com pelo menos uma letra e um número" placeholder="Crie uma senha" required>
+                <label class="formulario-label" for="confirmaSenha">Confirme sua senha</label>
+                <input class="formulario-item formulario-senha" type="password" name="confirmaSenha" id="confirmaSenha" placeholder="Repita a senha criada acima" required>
+                <button class="btn-cadastrar" type="submit">Cadastrar</button>
+            </form>
+        </main>
+        <footer class="rodape">
+            <p>2022 - Desenvolvido por Alura.</p>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/cadastro.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body>
+    <div class="container-logado">
+        <header class="cabecalho">
+            <nav class="cabecalho__grupo">
+                <img src="./img/Logo-header.png" alt="Logo da adopet" class="cabecalho-itens cabecalho__grupo-logo">
+                <a href="index.html" class="cabecalho-itens"><img src="./img/Home.png" class="cabecalho__icone" alt="Ícone Home"></a>
+                <a href="mensagem.html" class="cabecalho-itens"><img src="./img/Mensagens.png"  class="cabecalho__icone" id="menuMensagem"alt="Ícone Mensagens"></a>
+            </nav>
+            <nav class="menus">
+                <a href="perfil.html" class="cabecalho-perfil"><img src="" class="fotos-usuario" id="foto-thumb" alt="Ícone para perfil"></a>
+                <a href="" class="cabecalho-perfil logout"><span class="glyphicon glyphicon-log-out"></span></a>
+            </nav>
+        </header>
+        <main class="principal-logado">
+            <p class="titulo-mensagem">Esse é o perfil que aparece para responsáveis ou ONGs que recebem sua mensagem.</p>
+            <section class="dados-mensagem">
+                <form action="" class="formulario-mensagem" id="formulario-perfil">
+                    <h2 class="formulario-mensagem__perfil">Perfil</h2>
+                    <label for="foto" class="formulario-mensagem__label">Foto</label>
+                    <div class="formulario-mensagem__foto-perfil">
+                        <input type="file" id="inputFoto" name="inputFoto" accept="image/png, image/jpeg" hidden>
+                        <img src="" class="fotos-usuario" id="foto" alt="Foto do perfil">
+                    </div>
+                    <p class="formulario-mensagem__editar-foto">Clique na foto para editar</p>
+                    <label for="nome" class="formulario-mensagem__label">Nome</label>
+                    <input type="text" class="formulario-mensagem__dados" name="nome" id="nome-perfil"  required>
+                    <label for="telefone" class="formulario-mensagem__label">Telefone</label>
+                    <input type="tel" class="formulario-mensagem__dados" name="telefone" id="telefone-perfil" placeholder="(__) _____-____" required>
+                    <label for="cidade" class="formulario-mensagem__label">Cidade</label>
+                    <input type="text" class="formulario-mensagem__dados " name="cidade" id="cidade-perfil" pattern="[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+/[ ]*[a-zA-Z]{2}" title="Informe 'cidade/estado'" placeholder="Cidade/Estado" required> 
+                    <label for="sobre" class="formulario-mensagem__label">Mensagem</label>
+                    <textarea cols="40" class="formulario-mensagem__dados formulario-mensagem__textarea" id="sobre-perfil"></textarea>
+                    <button class="btn-enviar" type="submit">Salvar</button>
+                </form>
+            </section>
+        </main>
+        <footer class="rodape">
+            <p>2022 - Desenvolvido por Alura.</p>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jquery.mask.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/perfil.js"></script>
+</body>
+</html>

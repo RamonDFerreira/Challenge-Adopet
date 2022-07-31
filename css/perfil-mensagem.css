@@ -1,0 +1,180 @@
+.container-logado {
+    background-image: url('../img/bg-topo-mobile.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;  
+}
+
+.principal-logado {
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 1em;
+}
+
+.titulo-mensagem {
+    color: var(--cor-azul);
+    margin:.5em 4em 2em;
+}
+
+.menus {
+    display: flex;
+    align-items: center;
+}
+
+.glyphicon-log-out {
+    margin-left: 1em;
+}
+
+#inputFoto {
+    display: none;
+}
+
+.formulario-mensagem {
+    background-color: var(--cor-cinza-claro-fundo);
+    margin: 1.5em;
+    padding: 2em 1em;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: initial;
+}
+
+.formulario-mensagem__perfil{
+    text-align: center;
+}
+
+.formulario-mensagem__label {
+    color: var(--cor-azul);
+    font-weight: 600;
+}
+
+.formulario-mensagem__foto-perfil {
+    text-align: center;
+    margin: .5em 0;
+
+}
+
+.formulario-mensagem__editar-foto{
+    font-size: 12px;
+    color: var(--cor-coral);
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.formulario-mensagem__dados {
+    padding: 1em;
+    border: 0px;
+    border-radius: 6px;
+    margin: .5em 0 1em;
+    color: var(--cor-cinza);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.formulario-mensagem__dados::placeholder {
+    font-size: 14px;
+    font-family: var(--fonte-principal);
+    color: var(--cor-cinza-claro);
+}
+
+.formulario-mensagem__textarea {
+    height: 150px;
+    line-height: 24px;
+}
+
+#foto {
+    object-fit: cover;
+    max-width: 80px;
+    width: 100%;
+    height: 80px;
+    border-radius: 50%;
+}
+
+#foto-thumb {
+    object-fit: cover;
+    max-width: 40px;
+    width: 100%;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.btn-enviar {
+    border: 0px;
+    border-radius: 6px;
+    font-family: var(--fonte-principal);
+    background: var(--cor-coral);
+    text-decoration: none;
+    color: var(--cor-branco);
+    margin: 1em auto 0; 
+    padding: 0.5em 0;
+    display: block; 
+    width: 45%;
+}
+
+.btn-enviar:hover {
+    transform: scale(1.01);
+}
+
+.cabecalho-perfil img:hover, .formulario-mensagem__foto-perfil img:hover {
+    -webkit-box-shadow:inset 0px 0px 0px 10px #f00;
+    -moz-box-shadow:inset 0px 0px 0px 10px #f00;
+    box-shadow:inset 0px 0px 0px 10px #f00;
+    border-radius: 50%;
+}
+
+@media screen and (min-width:768px) {
+    .container-logado {
+        background-image: url('../img/bg-topo.png'), 
+            url('../img/bg-direita.png');
+        background-repeat: no-repeat;
+        background-position: left top, right center;
+    }
+
+    .principal-logado {
+        margin-top: 5em;
+        width: 530px;
+    }
+
+    .titulo-mensagem {
+        margin: .5em 0 2em;
+        font-size: 18px;
+    }
+
+    .formulario-mensagem {
+        margin: 1.5em 0;
+    }
+    
+    .formulario-mensagem__dados {
+        margin: 1em 0 1.5em;
+    }
+
+    .formulario-mensagem__textarea {
+        height: 80px;
+    }
+
+    .formulario-mensagem__perfil {
+        font-size: 21px;
+        font-weight: 600;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .principal-logado {
+        margin-top: 1em;
+        width: 560px;
+    }
+
+    .titulo-mensagem {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    .formulario-mensagem {
+        margin-top: 2em;
+        padding: 2em;
+    }
+}

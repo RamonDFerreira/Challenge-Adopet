@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="cabecalho">
+            <nav class="cabecalho__grupo">
+                <img src="./img/Logo-header.png" alt="Logo da adopet" class="cabecalho-itens cabecalho__grupo-logo">
+                <a href="index.html" class="cabecalho-itens"><img src="./img/Home.png" class="cabecalho__icone" alt="Ícone Home"></a>
+                <a href="mensagem.html" class="cabecalho-itens"><img src="./img/Mensagens.png"  class="cabecalho__icone" id="menuMensagem" alt="Ícone Mensagens"></a>
+            </nav>
+        </header>
+        <main class="principal">
+            <img class="titulo" src="./img/Logo-azul.png" alt="Logo da adopet">
+            <p class="texto-login">Já tem conta? Faça seu login:</p>
+            <form class="formulario" id="formularioLogin" action="home.html">
+                <label class="formulario-label" for="email">Email</label>
+                <input class="formulario-item" type="email" name="email" id="email" placeholder="Escolha seu melhor email" required>
+                <label class="formulario-label" for="senha">Senha</label>
+                <input class="formulario-item formulario-senha" type="password" name="senha" id="senha" placeholder="Insira sua senha" required>
+                <a href="" class="formulario-esqueci-senha">Esqueci minha senha</a>
+                <button class="btn-cadastrar" type="submit">Entrar</button>
+            </form>
+        </main>
+        <footer class="rodape">
+            <p>2022 - Desenvolvido por Alura.</p>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

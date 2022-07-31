@@ -1,0 +1,361 @@
+@import url(./home.css);
+@import url(./perfil-mensagem.css);
+
+:root {
+    --cor-azul:#3772FF;
+    --cor-verde:#36D6AD; 
+    --cor-coral:#FC7071;
+    --cor-creme:#FCF0E3;
+    --cor-cinza:#737380;
+    --cor-cinza-claro:#BCBCBC;
+    --cor-cinza-claro-fundo:#F7F7F7;
+    --cor-branco:#FFFFFF;
+    --cor-branco-fundo: ##E5E5E5;
+    --fonte-principal: 'Poppins', sans-serif;
+    --fonte-secundaria: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 16px;
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-branco-fundo);
+}
+
+.container-index {
+    background-image: url('../img/bg-topo-mobile.png'), 
+        url('../img/bg-direita-mobile.png'), 
+        url('../img/Ilustracao.png');
+    background-repeat: no-repeat;
+    background-position: left top, right center, bottom 4.375em left calc(50% - 20px);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    background-image: url('../img/Patas.png'),
+        url('../img/bg-topo-mobile.png'), 
+        url('../img/bg-esquerda.png');
+    background-repeat: no-repeat;
+    background-position: right top, left top, left top 23em;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.bg-azul {
+    background-color: var(--cor-azul);
+}
+
+.cabecalho {
+    margin: 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 43px;
+}
+
+.cabecalho__grupo {
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho__grupo-logo{
+    display: none;
+}
+
+.cabecalho-itens {
+   margin-right: 3em;
+}
+
+.principal-index {
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 3em;
+}
+
+.principal {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 1em;
+}
+
+.titulo {
+    font-family: var(--fonte-secundaria);
+    font-size: 26px;
+    line-height: 48px;
+    margin:0.75em;
+    color: var(--cor-branco);
+}
+
+.titulo-cadastro-desktop {
+    display: none;
+}
+
+.texto-home {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--cor-branco);
+}
+
+.texto {
+    color: var(--cor-azul);
+    margin-bottom: 0.5em;
+}
+
+.texto-login {
+    font-weight: 400;
+    line-height: 21px;
+    color: var(--cor-azul);
+    margin: 2.5em 0
+}
+
+
+
+.formulario-esqueci-senha {
+    font-size: 12px;
+    color: var(--cor-coral);
+    margin-bottom: 1.5em;
+}
+
+.btn-home {
+    border-radius: 6px;
+    background: var(--cor-coral);
+    text-decoration: none;
+    color: var(--cor-branco);
+    margin: 1em auto;
+    padding: 0.75em 0;
+    display: block;  
+    width: 11em; 
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+}
+
+.btn-cadastrar {
+    border: 0px;
+    border-radius: 6px;
+    font-family: var(--fonte-principal);
+    background: var(--cor-coral);
+    text-decoration: none;
+    color: var(--cor-branco);
+    margin: 1em auto;
+    padding: 0.5em 0;
+    display: block; 
+    width: 45%;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    color: var(--cor-cinza);
+    margin-top: 2em;
+    width: 100%;
+}
+
+.formulario-label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.formulario-item {
+    text-align: center;
+    background: #F7F7F7;
+    border:0px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    padding: 1em;
+    margin: 0.5em 0 1.25em;
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 12px;  
+    color: var(--cor-cinza);
+}
+
+.formulario-item::placeholder {
+    color: var(--cor-cinza-claro);
+    font-weight: 400;
+    font-size: 12px;
+    font-family: var(--fonte-principal);
+}
+
+.formulario-senha::placeholder {
+    background: url(img/Senha.png) no-repeat;
+    background-position: right;
+}
+
+.rodape {
+    background-color: var(--cor-verde);
+    padding: 2.5em;
+    justify-content: flex-end;
+    text-align: center;
+    color: var(--cor-branco);
+}
+
+@media screen and (min-width:768px) {
+    .container-index {
+        background-image: url('../img/bg-topo.png'), 
+            url('../img/bg-direita.png'), 
+            url('../img/Ilustracao.png');
+        background-repeat: no-repeat;
+        background-position: left top, right center, bottom 4.375em left calc(50% - 20px);
+    }
+    
+    .container {
+        background-image: url('./img/Patas-tablet.png'),
+            url('../img/bg-topo.png'), 
+            url('../img/bg-direita.png');
+        background-repeat: no-repeat;
+        background-position: right top, left top, right center;
+
+    }
+
+    .cabecalho {
+        margin: 4em 3em;
+    }
+
+    .cabecalho-itens {
+        margin-right: 4em;
+    }
+
+    .cabecalho-itens:hover img {
+        transform: scale(1.1);
+    }
+
+    .cabecalho__grupo-logo{
+        display: block;
+    }
+
+    .principal-index, .principal {
+        width: 350px;
+    }
+
+    .principal-texto-cadastro {
+        width: 525px;
+        align-self: auto;
+    }
+
+    .titulo {
+        font-size: 28px;
+        font-family: var(--fonte-principal);
+        font-weight: 500;
+    }
+
+    .titulo-cadastro-desktop {
+        display: block;
+        margin: 0.75em auto;
+    }
+
+    .titulo-cadastro-mobile {
+        display: none;
+    }
+
+    .texto-home {
+        margin-bottom: 1em;
+    }
+    
+    .texto-home, .texto-login, .formulario-label, .texto {
+        font-size: 18px;
+    }
+
+    #label_nome {
+        order: -2;
+    }
+
+    #nome { 
+        order: -1;
+    }
+
+    .btn-home {
+        width: 100%;
+    }
+
+    .btn-home:hover, .btn-cadastrar:hover {
+        transform: scale(1.01);
+    }
+
+    .btn-cadastrar {
+        width: 40%;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+}
+
+@media screen and (min-width:1000px) {
+    .container-index {
+        background-image: url('../img/bg-topo.png'), 
+            url('../img/bg-direita-mobile.png'), 
+            url('../img/Ilustracao.png');
+        background-repeat: no-repeat;
+        background-position: left top, right center, bottom 4.375em left calc(50% - 20px);
+    }
+
+    .principal-index {
+        margin-top: -40px;
+        padding-top: 0px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+
+    .container-index {
+        background-image: url('./img/bg-topo.png'), 
+            url('../img/bg-direita.png'), 
+            url('../img/Ilustracao.png');
+        background-repeat: no-repeat;
+        background-position: left top, right center, bottom 4.375em left calc(50% - 20px);
+    }
+
+    .cabecalho {
+        margin: 3.5em 10em;
+    }
+
+    .cabecalho-itens {
+        margin-right: 2em;
+    }
+
+    .cabecalho__grupo-logo{
+        margin-right: 3em;
+    }
+
+    .principal-index {
+        width: 490px;
+        margin-top: 0px;
+        padding-top: 0;
+    }
+
+    .principal {
+        width: 560px;
+        padding-top: 0;
+    }
+    
+    .principal-texto-cadastro {
+        width: 100%;
+        margin: 0;
+    }
+
+    .btn-home {
+        width: 75%;
+    }
+
+    .formulario-senha {
+        width: 70%;
+        margin: 0.5em auto 1.25em ;
+    }
+
+    .btn-cadastrar {
+        width: 30%;
+        font-weight: 700;
+    }
+    
+}
