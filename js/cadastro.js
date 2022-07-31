@@ -4,6 +4,10 @@ const username = document.querySelector('#email');
 const password = document.querySelector('#senha');
 const passwordConfirm = document.querySelector('#confirmaSenha');
 
+window.onload = function () {
+    estaLogado()
+}
+
 formCadastro.addEventListener('submit', (e) => {
     e.preventDefault()
 
