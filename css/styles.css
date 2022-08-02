@@ -31,8 +31,8 @@ body {
     background-position: left top, right center, bottom 4.375em left calc(50% - 20px);
     display: flex;
     flex-direction: column;
-
-    min-height: 950px;
+    height: 100vh;
+    min-height: 800px;
 }
 
 .container {
@@ -44,6 +44,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    min-height: 800px;
 }
 
 .bg-azul {
