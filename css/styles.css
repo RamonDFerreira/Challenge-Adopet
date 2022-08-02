@@ -191,7 +191,7 @@ body {
 }
 
 .formulario-senha::placeholder {
-    background: url(./img/Senha.png) no-repeat;
+    background: url(../img/Senha.png) no-repeat;
     background-position: right;
 }
 
