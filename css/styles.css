@@ -31,7 +31,7 @@ body {
     background-position: left top, right center, bottom 4.375em left calc(50% - 20px);
     display: flex;
     flex-direction: column;
-    height: 100vh;
+
     min-height: 950px;
 }
 
