@@ -283,6 +283,7 @@ body {
 
     .btn-home:hover, .btn-cadastrar:hover {
         transform: scale(1.01);
+        cursor:pointer;
     }
 
     .btn-cadastrar {
